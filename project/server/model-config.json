@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "site_user": {
+    "dataSource": "db",
+    "public": true
+  },
+  "sugar-levels": {
+    "dataSource": "db",
+    "public": true
+  },
+  "food_added": {
+    "dataSource": "db",
+    "public": true
+  },
+  "index": {
+    "dataSource": "db",
+    "public": true
+  },
+  "profile": {
+    "dataSource": "db",
+    "public": true
+  }
+}

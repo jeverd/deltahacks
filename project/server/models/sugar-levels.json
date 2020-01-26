@@ -1,0 +1,26 @@
+{
+  "name": "sugar-levels",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "sugar_level": {
+      "type": "number",
+      "required": true
+    },
+    "datetime": {
+      "type": "date",
+      "required": true
+    },
+    "profile_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

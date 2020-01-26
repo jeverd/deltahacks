@@ -1,0 +1,12 @@
+version: '3.3'
+services: 
+  mysql-db:
+    image: mariadb:10.3
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: pysfy
+    stdin_open: true
+    tty: true
+    ports:
+      - 1901:3306/tcp 
+  

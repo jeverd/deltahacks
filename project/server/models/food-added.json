@@ -1,0 +1,44 @@
+{
+  "name": "food_added",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "food_name": {
+      "type": "string",
+      "required": true
+    },
+    "calories": {
+      "type": "string",
+      "required": true
+    },
+    "carbs": {
+      "type": "string",
+      "required": false
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "sugar": {
+      "type": "number"
+    },
+    "gi": {
+      "type": "string"
+    },
+    "gl": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "meal_name" : {
+      "type":"string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

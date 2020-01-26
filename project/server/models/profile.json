@@ -1,0 +1,52 @@
+{
+  "name": "profile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "site_user_id": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "sugar_level": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sugar-levels": {
+      "type": "hasMany",
+      "model": "sugar-levels",
+      "foreignKey": "profile_id",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "foodAddeds": {
+      "type": "hasMany",
+      "model": "food_added",
+      "foreignKey": "profile_id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

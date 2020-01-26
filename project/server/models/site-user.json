@@ -1,0 +1,22 @@
+{
+  "name": "site_user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "profiles": {
+      "type": "hasOne",
+      "model": "profile",
+      "foreignKey": "site_user_id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

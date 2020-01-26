@@ -1,0 +1,11 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 1901,
+    "database": "delta",
+    "username": "root",
+    "password": "password",
+    "name": "db",
+    "connector": "mysql"
+  }
+}
